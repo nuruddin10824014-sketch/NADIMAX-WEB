@@ -1,0 +1,256 @@
+/* ========================================
+   HEART RATE MODULE
+======================================== */
+
+.page-header{
+    margin-bottom:30px;
+}
+
+.page-header h1{
+    font-size:30px;
+    font-weight:700;
+    color:#0f172a;
+}
+
+.page-header p{
+    color:#64748b;
+    margin:0;
+}
+
+/* ========================================
+   CARD
+======================================== */
+
+.card-premium{
+    background:#fff;
+    border-radius:18px;
+    padding:24px;
+    box-shadow:0 10px 30px rgba(15,23,42,.08);
+    border:1px solid #edf2f7;
+    transition:.3s;
+}
+
+.card-premium:hover{
+    transform:translateY(-3px);
+    box-shadow:0 16px 40px rgba(15,23,42,.12);
+}
+
+/* ========================================
+   BUTTON
+======================================== */
+
+.btn-premium{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:11px 20px;
+    border:none;
+    border-radius:12px;
+    background:#7A0019;
+    color:#fff;
+    font-weight:600;
+    text-decoration:none;
+    transition:.25s;
+}
+
+.btn-premium:hover{
+    background:#1d4ed8;
+    color:#fff;
+    text-decoration:none;
+}
+
+/* ========================================
+   FORM
+======================================== */
+
+.form-control,
+.form-select{
+    border-radius:12px;
+    min-height:48px;
+    border:1px solid #dbe4ef;
+    box-shadow:none;
+}
+
+.form-control:focus,
+.form-select:focus{
+    border-color:#7A0019;
+    box-shadow:0 0 0 .2rem rgba(37,99,235,.15);
+}
+
+.form-label{
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+/* ========================================
+   TABLE
+======================================== */
+
+.table{
+    margin-bottom:0;
+}
+
+.table thead th{
+    background:#f8fafc;
+    border:none;
+    color:#334155;
+    font-weight:700;
+    white-space:nowrap;
+}
+
+.table td{
+    vertical-align:middle;
+    border-color:#edf2f7;
+}
+
+.table tbody tr{
+    transition:.25s;
+}
+
+.table tbody tr:hover{
+    background:#f8fbff;
+}
+
+/* ========================================
+   BADGE
+======================================== */
+
+.badge{
+    padding:8px 12px;
+    border-radius:999px;
+    font-size:.8rem;
+    font-weight:600;
+}
+
+/* ========================================
+   ALERT
+======================================== */
+
+.alert{
+    border:none;
+    border-radius:14px;
+}
+
+/* ========================================
+   ICON BOX
+======================================== */
+
+.sensor-box{
+    text-align:center;
+    padding:25px;
+    border-radius:16px;
+    border:1px solid #edf2f7;
+    transition:.3s;
+}
+
+.sensor-box:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.sensor-box i{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.sensor-box h2{
+    font-weight:700;
+    margin-bottom:5px;
+}
+
+/* ========================================
+   STATISTIC CARD
+======================================== */
+
+.stat-card{
+    background:#fff;
+    border-radius:18px;
+    padding:22px;
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+    transition:.3s;
+}
+
+.stat-card:hover{
+    transform:translateY(-4px);
+}
+
+.stat-card small{
+    color:#64748b;
+    display:block;
+}
+
+.stat-card h2{
+    margin-top:8px;
+    margin-bottom:0;
+    font-weight:700;
+}
+
+/* ========================================
+   PAGINATION
+======================================== */
+
+.pagination{
+    margin-bottom:0;
+}
+
+.page-link{
+    border:none;
+    color:#7A0019;
+    border-radius:10px !important;
+    margin:0 3px;
+}
+
+.page-item.active .page-link{
+    background:#7A0019;
+    border-color:#7A0019;
+}
+
+/* ========================================
+   CODE
+======================================== */
+
+code{
+    background:#eff6ff;
+    color:#1e40af;
+    padding:6px 10px;
+    border-radius:8px;
+    display:inline-block;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width:992px){
+
+    .page-header{
+        flex-direction:column;
+        align-items:flex-start !important;
+    }
+
+    .btn-premium{
+        width:100%;
+    }
+
+    .table-responsive{
+        border-radius:15px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .card-premium{
+        padding:18px;
+    }
+
+    .page-header h1{
+        font-size:24px;
+    }
+
+    .sensor-box{
+        margin-bottom:20px;
+    }
+
+}

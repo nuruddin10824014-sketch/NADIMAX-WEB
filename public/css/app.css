@@ -1,0 +1,307 @@
+/* ==========================================================
+   NADIMAX ADMIN
+   Global Styles
+========================================================== */
+
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ==========================
+   ROOT COLOR
+========================== */
+
+:root{
+
+    /* ===== Heart Theme ===== */
+
+    --primary:#7A0019;
+    --primary-dark:#5C0017;
+
+    --secondary:#6B7280;
+
+    --success:#2E8B57;
+
+    --warning:#C47A00;
+
+    --danger:#B22222;
+
+    --info:#8B5E3C;
+
+    --background:#FAF7F7;
+
+    --surface:#FFFFFF;
+
+    --text:#2B2B2B;
+
+    --text-light:#6B7280;
+
+    --border:#E7D6D8;
+
+}
+
+/* ==========================
+   BODY
+========================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--background);
+
+    color:var(--text);
+
+    overflow-x:hidden;
+
+}
+
+/* ==========================
+   LINK
+========================== */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/* ==========================
+   IMAGE
+========================== */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+button{
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+/* ==========================
+   INPUT
+========================== */
+
+input,
+select,
+textarea{
+
+    font-family:'Poppins',sans-serif;
+
+    outline:none;
+
+}
+
+/* ==========================
+   SCROLLBAR
+========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+    height:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#eef2f7;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#cbd5e1;
+
+    border-radius:30px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#94a3b8;
+
+}
+
+/* ==========================
+   CARD DEFAULT
+========================== */
+
+.card{
+
+    background:var(--surface);
+
+    border:none;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+/* ==========================
+   TEXT
+========================== */
+
+.text-primary{
+
+    color:var(--primary);
+
+}
+
+.text-success{
+
+    color:var(--success);
+
+}
+
+.text-danger{
+
+    color:var(--danger);
+
+}
+
+.text-warning{
+
+    color:var(--warning);
+
+}
+
+.text-secondary{
+
+    color:var(--secondary);
+
+}
+
+/* ==========================
+   BACKGROUND
+========================== */
+
+.bg-primary{
+
+    background:var(--primary);
+
+}
+
+.bg-success{
+
+    background:var(--success);
+
+}
+
+.bg-danger{
+
+    background:var(--danger);
+
+}
+
+.bg-warning{
+
+    background:var(--warning);
+
+}
+
+/* ==========================
+   SHADOW
+========================== */
+
+.shadow-sm{
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.shadow-md{
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.shadow-lg{
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+/* ==========================
+   BORDER RADIUS
+========================== */
+
+.rounded{
+
+    border-radius:var(--radius);
+
+}
+
+.rounded-lg{
+
+    border-radius:24px;
+
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+
+.fade-in{
+
+    animation:fadeIn .4s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(10px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================
+   SELECTION
+========================== */
+
+::selection{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}

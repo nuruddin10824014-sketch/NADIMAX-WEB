@@ -1,0 +1,391 @@
+/* ======================================================
+   NADIMAX ADMIN
+   Sidebar
+====================================================== */
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 270px;
+    height: 100vh;
+    background: linear-gradient(
+        180deg,
+        #7A0019 0%,
+        #650016 45%,
+        #450010 100%
+    );
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    overflow:hidden;
+    z-index:1000;
+    box-shadow:4px 0 18px rgba(0,0,0,.12);
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.sidebar-header{
+
+    height:90px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 24px;
+
+    border-bottom:1px solid rgba(255,255,255,.12);
+
+}
+
+.logo-icon{
+
+    width:52px;
+    height:52px;
+    background:#fff;
+    color:#7A0019;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+    margin-right:15px;
+    flex-shrink:0;
+    box-shadow:0 6px 15px rgba(0,0,0,.15);
+
+}
+
+.logo-text h2{
+
+    margin:0;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    letter-spacing:.4px;
+
+}
+
+.logo-text span{
+
+    font-size:13px;
+
+    opacity:.8;
+
+}
+
+/* ===========================
+   MENU
+=========================== */
+
+.sidebar-menu{
+
+    flex:1;
+
+    overflow-y:auto;
+
+    padding:25px 0;
+
+}
+
+.sidebar-menu::-webkit-scrollbar{
+
+    width:6px;
+
+}
+
+.sidebar-menu::-webkit-scrollbar-thumb{
+
+    background:rgba(255,255,255,.2);
+
+    border-radius:20px;
+
+}
+
+.menu-title{
+
+    display:block;
+
+    padding:0 28px 15px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    opacity:.7;
+
+}
+
+.sidebar-menu ul{
+
+    margin:0;
+
+    padding:0;
+
+    list-style:none;
+
+}
+
+.sidebar-menu li{
+
+    margin:6px 15px;
+
+}
+
+.sidebar-menu a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    padding:14px 18px;
+
+    text-decoration:none;
+
+    color:#fff;
+
+    border-radius:14px;
+
+    transition:.25s;
+
+    font-weight:500;
+
+}
+
+.sidebar-menu a i{
+
+    width:24px;
+
+    text-align:center;
+
+    font-size:18px;
+
+}
+
+.sidebar-menu a span{
+
+    font-size:15px;
+
+}
+
+/* Hover */
+
+.sidebar-menu a:hover{
+
+    background:rgba(255,255,255,.16);
+
+    transform:translateX(6px);
+
+}
+
+/* Active */
+
+.sidebar-menu a.active{
+
+   background:#ffffff;
+
+    color:#7A0019;
+
+    font-weight:600;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+.sidebar-menu a.active i{
+
+        color:#7A0019;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.sidebar-footer{
+
+    display:flex;
+
+    align-items:center;
+
+    padding:18px 22px;
+
+    border-top:1px solid rgba(255,255,255,.12);
+
+}
+
+.admin-avatar{
+
+    margin-right:15px;
+
+}
+
+.admin-avatar img{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    border:3px solid rgba(255,255,255,.3);
+
+}
+
+.admin-info{
+
+    flex:1;
+
+}
+
+.admin-info h4{
+
+    margin:0;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+.admin-info span{
+
+    font-size:13px;
+
+    opacity:.8;
+
+}
+
+.admin-info span::before{
+
+    content:"";
+
+    display:inline-block;
+
+    width:8px;
+
+    height:8px;
+
+    background:#22c55e;
+
+    border-radius:50%;
+
+    margin-right:6px;
+
+}
+
+/* ===========================
+   COLLAPSE (Future)
+=========================== */
+
+.sidebar.collapsed{
+
+    width:90px;
+
+    transition:.3s;
+
+}
+
+.sidebar.collapsed .logo-text,
+
+.sidebar.collapsed .menu-title,
+
+.sidebar.collapsed .sidebar-menu span,
+
+.sidebar.collapsed .admin-info{
+
+    display:none;
+
+}
+
+.sidebar.collapsed .sidebar-menu a{
+
+    justify-content:center;
+
+}
+
+.sidebar.collapsed .logo-icon{
+
+    margin-right:0;
+
+}
+
+.sidebar.collapsed .sidebar-header{
+
+    justify-content:center;
+
+}
+
+.sidebar.collapsed .sidebar-footer{
+
+    justify-content:center;
+
+}
+
+.sidebar.collapsed .admin-avatar{
+
+    margin-right:0;
+
+}
+
+/* ===========================
+   Animation
+=========================== */
+
+.sidebar,
+.sidebar *{
+
+    transition:.25s ease;
+
+}
+
+/* Ripple Effect */
+
+.sidebar-menu a{
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.ripple{
+
+    position: absolute;
+
+    width: 12px;
+
+    height: 12px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.35);
+
+    transform: translate(-50%,-50%) scale(0);
+
+    animation: rippleAnimation .6s linear;
+
+    pointer-events: none;
+
+}
+
+@keyframes rippleAnimation{
+
+    to{
+
+        transform: translate(-50%,-50%) scale(20);
+
+        opacity:0;
+
+    }
+
+}

@@ -1,0 +1,302 @@
+/* ==========================================================
+   NADIMAX ADMIN
+   FORM V2
+========================================================== */
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    margin-bottom:22px;
+}
+
+.form-group label{
+    font-size:14px;
+    font-weight:600;
+    color:#334155;
+}
+
+/* INPUT */
+
+.form-control{
+
+    width:100%;
+
+    height:48px;
+
+    padding:0 16px;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:14px;
+
+    background:#fff;
+
+    color:#334155;
+
+    font-size:14px;
+
+    transition:.3s;
+
+}
+
+.form-control::placeholder{
+
+    color:#94a3b8;
+
+}
+
+.form-control:hover{
+
+    border-color:#cbd5e1;
+
+}
+
+.form-control:focus{
+
+    outline:none;
+
+    border-color:#7A0019;
+
+    box-shadow:
+        0 0 0 5px rgba(122,0,25,.08);
+
+}
+
+/* TEXTAREA */
+
+textarea.form-control{
+
+    min-height:130px;
+
+    padding:14px 16px;
+
+    resize:vertical;
+
+}
+
+/* SELECT */
+
+select.form-control{
+
+    cursor:pointer;
+
+}
+
+/* FILE */
+
+input[type=file].form-control{
+
+    padding:10px;
+
+    cursor:pointer;
+
+}
+
+/* CHECKBOX */
+
+.form-check{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.form-check input{
+
+    width:18px;
+
+    height:18px;
+
+    accent-color:#7A0019;
+
+}
+
+/* RADIO */
+
+.form-radio{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.form-radio input{
+
+    accent-color:#7A0019;
+
+}
+
+/* INPUT GROUP */
+
+.input-group{
+
+    display:flex;
+
+    align-items:center;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:14px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+}
+
+.input-group:focus-within{
+
+    border-color:#7A0019;
+
+    box-shadow:
+        0 0 0 5px rgba(122,0,25,.08);
+
+}
+
+.input-group i{
+
+    width:50px;
+
+    text-align:center;
+
+    color:#64748b;
+
+}
+
+.input-group input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    height:48px;
+
+    padding-right:16px;
+
+}
+
+/* ERROR */
+
+.is-invalid{
+
+    border-color:#dc2626 !important;
+
+}
+
+.invalid-feedback{
+
+    margin-top:5px;
+
+    color:#dc2626;
+
+    font-size:13px;
+
+}
+
+/* SUCCESS */
+
+.is-valid{
+
+    border-color:#16a34a !important;
+
+}
+
+/* ROW */
+
+.form-row{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+/* CARD */
+
+.form-card{
+
+    background:#fff;
+
+    padding:28px;
+
+    border-radius:18px;
+
+    border:1px solid #eef2f7;
+
+    box-shadow:
+        0 8px 24px rgba(15,23,42,.05);
+
+}
+
+/* TITLE */
+
+.form-title{
+
+    margin-bottom:28px;
+
+}
+
+.form-title h2{
+
+    margin:0;
+
+    color:#1e293b;
+
+}
+
+.form-title p{
+
+    margin-top:8px;
+
+    color:#64748b;
+
+}
+
+/* ACTION */
+
+.form-action{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:15px;
+
+    margin-top:30px;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .form-row{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .form-action{
+
+        flex-direction:column;
+
+    }
+
+    .form-action .btn{
+
+        width:100%;
+
+    }
+
+}

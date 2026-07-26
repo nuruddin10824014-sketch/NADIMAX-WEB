@@ -1,0 +1,138 @@
+/* ==========================================================
+BUTTON
+========================================================== */
+
+.btn-premium{
+
+    border:none;
+
+    border-radius:16px;
+
+    padding:12px 24px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.btn-premium:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-3px);
+
+    box-shadow:var(--shadow);
+
+}
+
+/* ==========================================================
+CARD
+========================================================== */
+
+.card-premium{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:28px;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.card-premium:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+/* ==========================================================
+BADGE
+========================================================== */
+
+.badge-premium{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.badge-online{
+
+    background:var(--success-light);
+
+    color:var(--success);
+
+}
+
+.badge-offline{
+
+    background:var(--danger-light);
+
+    color:var(--danger);
+
+}
+
+.badge-warning{
+
+    background:var(--warning-light);
+
+    color:var(--warning);
+
+}
+
+/* ==========================================================
+PROGRESS
+========================================================== */
+
+.progress-premium{
+
+    width:100%;
+
+    height:10px;
+
+    background:#e5e7eb;
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+}
+
+.progress-premium span{
+
+    display:block;
+
+    height:100%;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        #60a5fa
+    );
+
+}
+

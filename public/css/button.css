@@ -1,0 +1,199 @@
+/* ==========================================================
+   NADIMAX ADMIN
+   BUTTON V2
+========================================================== */
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    height:46px;
+    padding:0 22px;
+
+    border:none;
+    border-radius:14px;
+
+    cursor:pointer;
+
+    font-size:14px;
+    font-weight:600;
+    text-decoration:none;
+
+    transition:all .3s ease;
+
+    user-select:none;
+}
+
+/* Primary */
+
+.btn-primary{
+
+    background:linear-gradient(
+        135deg,
+        #7A0019,
+        #560013
+    );
+
+    color:#fff;
+
+    box-shadow:
+        0 12px 28px rgba(122,0,25,.20);
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 18px 35px rgba(122,0,25,.28);
+
+}
+
+/* Secondary */
+
+.btn-secondary{
+
+    background:#fff;
+
+    color:#475569;
+
+    border:1px solid #e5e7eb;
+
+}
+
+.btn-secondary:hover{
+
+    border-color:#7A0019;
+
+    color:#7A0019;
+
+    transform:translateY(-3px);
+
+}
+
+/* Success */
+
+.btn-success{
+
+    background:#16a34a;
+
+    color:#fff;
+
+}
+
+.btn-success:hover{
+
+    background:#15803d;
+
+    transform:translateY(-3px);
+
+}
+
+/* Danger */
+
+.btn-danger{
+
+    background:#dc2626;
+
+    color:#fff;
+
+}
+
+.btn-danger:hover{
+
+    background:#b91c1c;
+
+    transform:translateY(-3px);
+
+}
+
+/* Warning */
+
+.btn-warning{
+
+    background:#f59e0b;
+
+    color:#fff;
+
+}
+
+.btn-warning:hover{
+
+    background:#d97706;
+
+    transform:translateY(-3px);
+
+}
+
+/* Outline */
+
+.btn-outline{
+
+    background:#fff;
+
+    border:2px solid #7A0019;
+
+    color:#7A0019;
+
+}
+
+.btn-outline:hover{
+
+    background:#7A0019;
+
+    color:#fff;
+
+}
+
+/* Icon */
+
+.btn i{
+
+    font-size:15px;
+
+}
+
+/* Small */
+
+.btn-sm{
+
+    height:38px;
+
+    padding:0 16px;
+
+    font-size:13px;
+
+}
+
+/* Large */
+
+.btn-lg{
+
+    height:54px;
+
+    padding:0 28px;
+
+    font-size:15px;
+
+}
+
+/* Disabled */
+
+.btn:disabled{
+
+    opacity:.6;
+
+    cursor:not-allowed;
+
+}
+
+/* Active */
+
+.btn:active{
+
+    transform:scale(.96);
+
+}

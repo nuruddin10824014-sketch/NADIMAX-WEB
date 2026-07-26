@@ -1,0 +1,58 @@
+/* ==========================================================
+   NADIMAX DESIGN SYSTEM
+========================================================== */
+
+:root{
+
+    /* Primary */
+
+    --primary:#800020;
+    --primary-light:#F8E8EB;
+    --primary-dark:#5C0017;
+
+    /* Success */
+
+    --success:#2E8B57;
+    --success-light:#E8F5EC;
+
+    /* Warning */
+
+    --warning:#D97706;
+    --warning-light:#FFF4DD;
+
+    /* Danger */
+
+    --danger:#B22222;
+    --danger-light:#FDECEC;
+
+    /* Info */
+
+    --info:#8B5E3C;
+    --info-light:#F5ECE5;
+
+    /* Neutral */
+
+    --white:#ffffff;
+    --background:#FAF7F7;
+    --border:#E9D5D5;
+
+    --text:#1e293b;
+    --text-light:#64748b;
+
+    /* Radius */
+
+    --radius-sm:10px;
+    --radius:18px;
+    --radius-lg:24px;
+
+    /* Shadow */
+
+    --shadow-sm:0 5px 12px rgba(0,0,0,.05);
+    --shadow:0 12px 30px rgba(0,0,0,.07);
+    --shadow-lg:0 20px 45px rgba(0,0,0,.10);
+
+    /* Transition */
+
+    --transition:.3s ease;
+
+}

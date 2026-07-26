@@ -1,0 +1,301 @@
+
+/* ==========================================
+   SUBSCRIPTION MODULE
+========================================== */
+
+.page-header{
+    margin-bottom:30px;
+}
+
+.page-header h1{
+    font-size:30px;
+    font-weight:700;
+    color:#0f172a;
+}
+
+.page-header p{
+    margin:0;
+    color:#64748b;
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.card-premium{
+    background:#ffffff;
+    border:1px solid #e2e8f0;
+    border-radius:18px;
+    padding:24px;
+    box-shadow:0 10px 25px rgba(15,23,42,.05);
+    transition:.3s;
+}
+
+.card-premium:hover{
+    transform:translateY(-4px);
+    box-shadow:0 18px 35px rgba(15,23,42,.10);
+}
+
+/* ==========================================
+   SUMMARY BOX
+========================================== */
+
+.summary-box{
+    background:#f8fafc;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    transition:.3s;
+}
+
+.summary-box:hover{
+    background:#eff6ff;
+}
+
+.summary-box small{
+    display:block;
+    color:#64748b;
+    margin-bottom:10px;
+    font-size:.9rem;
+}
+
+.summary-box h2{
+    margin:0;
+    font-size:28px;
+    font-weight:700;
+    color:#7A0019;
+}
+
+/* ==========================================
+   FORM
+========================================== */
+
+.form-label{
+    font-weight:600;
+    color:#334155;
+    margin-bottom:8px;
+}
+
+.form-control,
+.form-select{
+    min-height:48px;
+    border-radius:12px;
+    border:1px solid #dbe4ef;
+    box-shadow:none;
+}
+
+.form-control:focus,
+.form-select:focus{
+    border-color:#7A0019;
+    box-shadow:0 0 0 .2rem rgba(37,99,235,.15);
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.btn-premium{
+    background:#7A0019;
+    color:#fff;
+    border:none;
+    border-radius:12px;
+    padding:12px 22px;
+    font-weight:600;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn-premium:hover{
+    background:#1d4ed8;
+    color:#fff;
+}
+
+.btn{
+    border-radius:12px;
+}
+
+/* ==========================================
+   DETAIL BOX
+========================================== */
+
+.detail-box{
+    background:#f8fafc;
+    border:1px solid #e2e8f0;
+    border-radius:12px;
+    padding:14px 16px;
+    min-height:50px;
+    display:flex;
+    align-items:center;
+    color:#334155;
+}
+
+/* ==========================================
+   TABLE
+========================================== */
+
+.table{
+    margin-bottom:0;
+}
+
+.table thead th{
+    background:#f8fafc;
+    color:#334155;
+    border:none;
+    font-weight:700;
+}
+
+.table td{
+    vertical-align:middle;
+    border-color:#eef2f7;
+}
+
+.table tbody tr{
+    transition:.25s;
+}
+
+.table tbody tr:hover{
+    background:#f8fbff;
+}
+
+/* ==========================================
+   BADGE
+========================================== */
+
+.badge{
+    padding:8px 14px;
+    border-radius:999px;
+    font-size:.8rem;
+    font-weight:600;
+}
+
+/* ==========================================
+   ALERT
+========================================== */
+
+.alert{
+    border:none;
+    border-radius:12px;
+    padding:16px 20px;
+}
+
+/* ==========================================
+   PAGINATION
+========================================== */
+
+.pagination{
+    margin-bottom:0;
+}
+
+.page-link{
+    border:none;
+    border-radius:10px !important;
+    margin:0 3px;
+    color:#7A0019;
+}
+
+.page-item.active .page-link{
+    background:#7A0019;
+    border-color:#7A0019;
+}
+
+/* ==========================================
+   EMPTY STATE
+========================================== */
+
+.text-center i{
+    transition:.3s;
+}
+
+.text-center:hover i{
+    transform:scale(1.08);
+}
+
+.text-center h5{
+    color:#1e293b;
+    margin-top:10px;
+}
+
+.text-center p{
+    color:#64748b;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+    .page-header{
+        flex-direction:column;
+        align-items:flex-start !important;
+    }
+
+    .page-header .btn,
+    .page-header .btn-premium{
+        width:100%;
+    }
+
+    .summary-box{
+        margin-bottom:15px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .page-header h1{
+        font-size:24px;
+    }
+
+    .card-premium{
+        padding:18px;
+    }
+
+    .summary-box h2{
+        font-size:24px;
+    }
+
+    .btn-premium,
+    .btn{
+        width:100%;
+        justify-content:center;
+    }
+
+    .detail-box{
+        min-height:auto;
+        padding:12px;
+    }
+
+    .table-responsive{
+        border-radius:12px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .page-header{
+        gap:15px;
+    }
+
+    .page-header h1{
+        font-size:22px;
+    }
+
+    .summary-box{
+        padding:16px;
+    }
+
+    .summary-box h2{
+        font-size:22px;
+    }
+
+    .form-control,
+    .form-select{
+        min-height:44px;
+    }
+
+}
